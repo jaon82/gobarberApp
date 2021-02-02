@@ -62,3 +62,6 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 /.project
+
+# testing
+/coverage
