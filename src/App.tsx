@@ -1,7 +1,7 @@
 import 'react-native-gesture-handler';
 
 import React, { useEffect } from 'react';
-import { View, StatusBar } from 'react-native';
+import { View, StatusBar, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import SplashScreen from 'react-native-splash-screen';
 import codePush from "react-native-code-push";
@@ -28,5 +28,6 @@ const App: React.FC = () => {
 }
 
 export default codePush({
-  checkFrequency: codePush.CheckFrequency.ON_APP_RESUME
+  checkFrequency: codePush.CheckFrequency.ON_APP_RESUME,
+  installMode: codePush.InstallMode.ON_NEXT_RESUME
 })(App);
