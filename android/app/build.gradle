@@ -78,7 +78,7 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
-    enableHermes: true,  // clean and rebuild if changing
+    enableHermes: false,  // clean and rebuild if changing
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -166,6 +166,7 @@ android {
             resValue "string", "CodePushDeploymentKey", '""'
         }
         releaseStaging {
+            //signingConfig signingConfigs.release
             resValue "string", "CodePushDeploymentKey", '"8TTqYXJDRXkNhsg27D5FAEJiXoykIhmxeGz7G"'
             matchingFallbacks = ['release']
         }
