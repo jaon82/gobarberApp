@@ -163,6 +163,7 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            resValue "string", "CodePushDeploymentKey", '""'
         }
         releaseStaging {
             resValue "string", "CodePushDeploymentKey", '"9eO86n4POfD5Z3pJ3eXPFvHI0CAzjLPBvKxzx"'
